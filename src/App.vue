@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue';
 import TheWelcome from './components/TheWelcome.vue';
 import Test from './components/Test.vue';
+import Navbar from './components/Navbar.vue';
 </script>
 
 <template>
@@ -21,7 +22,8 @@ import Test from './components/Test.vue';
 
   <main>
     <!-- <TheWelcome /> -->
-    <test />
+    <Navbar />
+    <Test />
   </main>
 </template>
 

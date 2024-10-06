@@ -2,7 +2,13 @@
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        platypi: ['Platypi'],
+        quicksand: ['Quicksand'],
+        roboto: ['Roboto'],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('daisyui'), require('flowbite/plugin')],
 };
