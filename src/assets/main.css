@@ -3,3 +3,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.typewriter-container {
+  margin: auto;
+  display: inline-block;
+}
+
+.typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(19);
+}
+
+.wave-hand {
+  display: inline-block;
+  animation: wave 1.5s ease-in-out infinite;
+  transform-origin: 70% 70%; /* Titik putar dari tangan */
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
