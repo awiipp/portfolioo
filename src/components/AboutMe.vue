@@ -1,10 +1,10 @@
 <template lang="">
-  <div class="w-full bg-slate-950 text-center">
+  <div class="w-full bg-slate-900 text-center">
     <h1 class="text-4xl pt-10 py-20 font-quicksand text-slate-100 font-bold">
       — About Me —
     </h1>
   </div>
-  <div class="w-full bg-slate-950 flex justify-center items-center pb-20">
+  <div class="w-full bg-slate-900 flex justify-center items-center pb-20">
     <div class="w-1/2 flex justify-end items-center -ml-20 mr-14">
       <img src="../assets/study.jpeg" alt="" class="w-7/12 rounded-xl" />
     </div>

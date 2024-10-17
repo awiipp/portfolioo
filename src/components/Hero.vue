@@ -1,24 +1,24 @@
 <script setup>
-import Bg from './icons/svg/Topography.vue';
+import Bg from "./icons/svg/Topography.vue";
 </script>
 
 <template lang="">
   <div class="absolute bottom-0 overflow-hidden w-full -z-50">
-    <Bg />
+    <Bg class="w-full min-h-screen" />
   </div>
   <div
-    class="absolute bottom-0 overflow-hidden w-full h-72 bg-gradient-to-t from-slate-950 to-transparent -z-10"
+    class="absolute bottom-0 overflow-hidden w-full h-72 bg-gradient-to-t from-slate-900 to-transparent -z-10"
   ></div>
   <div class="text-white w-full min-h-screen flex font-quicksand">
     <div class="w-1/2 min-h-screen flex justify-center items-center">
       <div class="">
-        <p class="text-4xl font-semibold">
+        <p class="text-5xl font-semibold">
           Hi, There! <span class="wave-hand">👋🏻</span>
         </p>
         <div class="typewriter-container">
-          <p class="text-6xl font-bold typewriter py-3">I'm Sayid Arip</p>
+          <p class="text-7xl font-bold typewriter py-3">I'm Sayid Arip</p>
         </div>
-        <p class="text-4xl font-semibold text-slate-400">Web Developer</p>
+        <p class="text-5xl font-semibold text-slate-400">Web Developer</p>
       </div>
     </div>
     <div class="w-1/2 min-h-screen flex items-center">

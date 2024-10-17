@@ -26,9 +26,9 @@
       <li class="mx-5 text-base">
         <a href="/" class="hover:text-slate-300 font-normal">Experience</a>
       </li>
-      <!-- <li class="mx-5 text-base">
+      <li class="mx-5 text-base">
         <a href="/" class="hover:text-slate-300 font-normal">Project</a>
-      </li> -->
+      </li>
     </ul>
   </nav>
 </template>
@@ -47,41 +47,12 @@ export default {
   },
 
   mounted() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   },
 
   beforeMount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   },
 };
 </script>
-<style lang="">
-.hover-underline-animation {
-  display: inline-block;
-  position: relative;
-}
-
-.hover-underline-animation::after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #0087ca;
-  transition: transform 0.25s ease-out;
-}
-
-.hover-underline-animation:hover::after {
-  transform: scaleX(1);
-}
-
-.hover-underline-animation.left::after {
-  transform-origin: bottom right;
-}
-
-.hover-underline-animation.left:hover::after {
-  transform-origin: bottom left;
-}
-</style>
+<style lang=""></style>
