@@ -1,15 +1,14 @@
 <script setup>
-import HeroWave from './icons/svg/HeroWave.vue';
-import HeroWave2 from './icons/svg/HeroWave2.vue';
+import Bg from './icons/svg/Topography.vue';
 </script>
 
 <template lang="">
   <div class="absolute bottom-0 overflow-hidden w-full -z-50">
-    <HeroWave2 />
+    <Bg />
   </div>
-  <div class="absolute bottom-0 overflow-hidden w-full">
-    <HeroWave />
-  </div>
+  <div
+    class="absolute bottom-0 overflow-hidden w-full h-72 bg-gradient-to-t from-slate-950 to-transparent -z-10"
+  ></div>
   <div class="text-white w-full min-h-screen flex font-quicksand">
     <div class="w-1/2 min-h-screen flex justify-center items-center">
       <div class="">

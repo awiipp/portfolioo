@@ -7,6 +7,7 @@ import Hero from './components/Hero.vue';
 import Carousel from './components/Carousel.vue';
 import AboutMe from './components/AboutMe.vue';
 import Skills from './components/Skills.vue';
+import Experience from './components/Experience.vue';
 import 'flowbite';
 
 import { onMounted } from 'vue';
@@ -40,30 +41,13 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header> -->
-
   <main>
-    <!-- <TheWelcome /> -->
     <Navbar />
-    <!-- <Test /> -->
     <Hero />
     <AboutMe />
-    <!-- <Carousel /> -->
     <Skills />
+    <Experience />
   </main>
-  <div class="min-h-screen"></div>
 </template>
 
 <style scoped></style>

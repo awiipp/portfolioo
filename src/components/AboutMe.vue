@@ -4,20 +4,17 @@
       — About Me —
     </h1>
   </div>
-  <div class="w-full min-h-screen bg-slate-950 items-start flex">
-    <div class="w-1/2 flex justify-center items-center">
-      <img
-        src="../assets/icon.png"
-        alt=""
-        class="w-7/12 mx-auto rounded-full"
-      />
+  <div class="w-full bg-slate-950 flex justify-center items-center pb-20">
+    <div class="w-1/2 flex justify-end items-center -ml-20 mr-14">
+      <img src="../assets/study.jpeg" alt="" class="w-7/12 rounded-xl" />
     </div>
-    <div class="w-1/2 flex justify-center items-center md:mr-10">
+
+    <div class="w-1/2 flex justify-start items-center md:mr-10">
       <div class="mockup-code w-10/12 pb-16">
         <pre data-prefix="$"><code>display AboutMe.vue</code></pre>
         <pre
           data-prefix=">"
-          class="text-amber-300 mt-3"
+          class="text-amber-300 mt-3 loading-text"
         ><code>↻ Loading...</code></pre>
 
         <pre
