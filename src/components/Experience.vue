@@ -8,121 +8,108 @@
     <div
       class="flex md:flex-row flex-col flex-wrap justify-center items-center w-10/12 mx-auto"
     >
-      <div class="flex w-full flex-wrap justify-center">
-        <!--  -->
-        <div
-          class="w-3/12 h-[480px] rounded-3xl overflow-hidden flex flex-col text-slate-200 group m-5"
-        >
-          <div
-            class="w-full h-[270px] overflow-hidden flex items-center justify-center"
-          >
-            <img src="../assets/study.jpeg" class="" alt="" />
+      <ul className="timeline timeline-vertical">
+        <li>
+          <div className="timeline-start">1984</div>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
-          <div
-            class="w-full group-hover:bg-opacity-90 duration-300 h-[210px] bg-opacity-10 bg-gradient-to-l px-10 py-7 from-slate-800 to-slate-700 backdrop-filter backdrop-blur-md"
-          >
-            <div class="mb-5">
-              <h1 class="font-bold text-xl mb-1">Lorem Impus! MWahahaha.</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident, odio!
-              </p>
-            </div>
-            <div class="w-full flex justify-end">
-              <a
-                href="#"
-                class="bg- px-7 py-3 rounded-lg text-right bg-slate-400 text-slate-200 bg-opacity-20 hover:bg-opacity-40 duration-300 font-medium backdrop-filter backdrop-blur-md"
-                >Show</a
-              >
-            </div>
+          <div className="timeline-end timeline-box">
+            First Macintosh computer
           </div>
-        </div>
-        <!--  -->
-        <div
-          class="w-3/12 h-[480px] rounded-3xl overflow-hidden flex flex-col text-slate-200 group m-5"
-        >
-          <div
-            class="w-full h-[270px] overflow-hidden flex items-center justify-center"
-          >
-            <img src="../assets/study.jpeg" class="" alt="" />
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-start">1998</div>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
-          <div
-            class="w-full group-hover:bg-opacity-90 duration-300 h-[210px] bg-opacity-10 bg-gradient-to-l px-10 py-7 from-slate-800 to-slate-700 backdrop-filter backdrop-blur-md"
-          >
-            <div class="mb-5">
-              <h1 class="font-bold text-xl mb-1">Lorem Impus! MWahahaha.</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident, odio!
-              </p>
-            </div>
-            <div class="w-full flex justify-end">
-              <a
-                href="#"
-                class="bg- px-7 py-3 rounded-lg text-right bg-slate-400 text-slate-200 bg-opacity-20 hover:bg-opacity-40 duration-300 font-medium backdrop-filter backdrop-blur-md"
-                >Show</a
-              >
-            </div>
+          <div className="timeline-end timeline-box">iMac</div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-start">2001</div>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
-        </div>
-        <!--  -->
-        <div
-          class="w-3/12 h-[480px] rounded-3xl overflow-hidden flex flex-col text-slate-200 group m-5"
-        >
-          <div
-            class="w-full h-[270px] overflow-hidden flex items-center justify-center"
-          >
-            <img src="../assets/study.jpeg" class="" alt="" />
+          <div className="timeline-end timeline-box">iPod</div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-start">2007</div>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
-          <div
-            class="w-full group-hover:bg-opacity-90 duration-300 h-[210px] bg-opacity-10 bg-gradient-to-l px-10 py-7 from-slate-800 to-slate-700 backdrop-filter backdrop-blur-md"
-          >
-            <div class="mb-5">
-              <h1 class="font-bold text-xl mb-1">Lorem Impus! MWahahaha.</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident, odio!
-              </p>
-            </div>
-            <div class="w-full flex justify-end">
-              <a
-                href="#"
-                class="bg- px-7 py-3 rounded-lg text-right bg-slate-400 text-slate-200 bg-opacity-20 hover:bg-opacity-40 duration-300 font-medium backdrop-filter backdrop-blur-md"
-                >Show</a
-              >
-            </div>
+          <div className="timeline-end timeline-box">iPhone</div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-start">2015</div>
+          <div className="timeline-middle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              className="h-5 w-5"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                clipRule="evenodd"
+              />
+            </svg>
           </div>
-        </div>
-        <!--  -->
-        <div
-          class="w-3/12 h-[480px] rounded-3xl overflow-hidden flex flex-col text-slate-200 group m-5"
-        >
-          <div
-            class="w-full h-[270px] overflow-hidden flex items-center justify-center"
-          >
-            <img src="../assets/study.jpeg" class="" alt="" />
-          </div>
-          <div
-            class="w-full group-hover:bg-opacity-90 duration-300 h-[210px] bg-opacity-10 bg-gradient-to-l px-10 py-7 from-slate-800 to-slate-700 backdrop-filter backdrop-blur-md"
-          >
-            <div class="mb-5">
-              <h1 class="font-bold text-xl mb-1">Lorem Impus! MWahahaha.</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident, odio!
-              </p>
-            </div>
-            <div class="w-full flex justify-end">
-              <a
-                href="#"
-                class="bg- px-7 py-3 rounded-lg text-right bg-slate-400 text-slate-200 bg-opacity-20 hover:bg-opacity-40 duration-300 font-medium backdrop-filter backdrop-blur-md"
-                >Show</a
-              >
-            </div>
-          </div>
-        </div>
-        <!--  -->
-      </div>
+          <div className="timeline-end timeline-box">Apple Watch</div>
+        </li>
+      </ul>
     </div>
   </div>
 </template>

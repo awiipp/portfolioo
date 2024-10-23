@@ -19,7 +19,7 @@ import Bg from "./icons/svg/Topography.vue";
       <Bg class="w-full min-h-screen" />
     </div>
 
-    <div class="relative z-10">
+    <div class="relative z-10 top-52">
       <h1 class="text-4xl pt-5 py-20 font-quicksand text-slate-100 font-bold">
         — Skills —
       </h1>

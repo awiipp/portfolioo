@@ -25,7 +25,7 @@ import Bg from "./icons/svg/Topography.vue";
       <img
         src="../assets/icon.png"
         alt=""
-        class="w-7/12 mx-auto rounded-full border-8 border-slate-800"
+        class="w-6/12 mx-auto rounded-full border-8 border-slate-800"
       />
     </div>
   </div>
