@@ -1,42 +1,66 @@
 <template lang="">
   <nav
     :class="[
-      'text-white top-0 right-0 left-0 px-6 pt-4 pb-2 z-50 flex font-quicksand fixed duration-300',
+      'text-white top-0 right-0 left-0 px-6 py-4 z-50 flex items-center font-quicksand fixed duration-300',
       isScrolled
         ? 'bg-opacity-45 bg-slate-800 backdrop-filter backdrop-blur-md'
         : 'bg-transparent',
     ]"
   >
-    <h1 class="text-2xl font-semibold mb-3 text-slate-200 font-platypi">
+    <!-- Logo -->
+    <h1 class="text-2xl font-semibold text-slate-200 font-platypi">
       A<span class="text-slate-300">wii</span
       ><span class="text-slate-400">pp</span>
     </h1>
-    <ul
-      class="text-white font-normal text-sm flex items-center justify-center -mt-2 ml-auto"
+
+    <!-- Hamburger Icon for Mobile -->
+    <div
+      class="ml-auto lg:hidden hidden cursor-pointer z-50"
+      @click="isMenuOpen = !isMenuOpen"
     >
-      <li class="mx-5 text-base">
-        <a href="/" class="hover:text-slate-300 font-normal">Home</a>
-      </li>
-      <li class="mx-5 text-base">
-        <a href="/" class="hover:text-slate-300 font-normal">About Me</a>
-      </li>
-      <li class="mx-5 text-base">
-        <a href="/" class="hover:text-slate-300 font-normal">Skill</a>
-      </li>
-      <li class="mx-5 text-base">
+      <span class="block w-6 h-0.5 bg-white mb-1"></span>
+      <span class="block w-6 h-0.5 bg-white mb-1"></span>
+      <span class="block w-6 h-0.5 bg-white"></span>
+    </div>
+
+    <!-- Menu Items for Desktop -->
+    <ul
+      class="hidden lg:flex text-white font-normal text-sm items-center justify-center ml-auto space-x-5"
+    >
+      <li><a href="/" class="hover:text-slate-300 font-normal">Home</a></li>
+      <li><a href="/" class="hover:text-slate-300 font-normal">About Me</a></li>
+      <li><a href="/" class="hover:text-slate-300 font-normal">Skill</a></li>
+      <li>
         <a href="/" class="hover:text-slate-300 font-normal">Experience</a>
       </li>
-      <li class="mx-5 text-base">
-        <a href="/" class="hover:text-slate-300 font-normal">Project</a>
-      </li>
+      <li><a href="/" class="hover:text-slate-300 font-normal">Project</a></li>
     </ul>
+
+    <!-- Sidebar Menu for Mobile -->
+    <transition name="slide" duration-300>
+      <div
+        v-if="isMenuOpen"
+        class="fixed inset-y-0 left-0 w-3/4 max-w-xs bg-slate-800 bg-opacity-95 p-6 z-40 text-white font-normal text-lg flex flex-col space-y-6 shadow-lg"
+      >
+        <button @click="isMenuOpen = false" class="ml-auto text-4xl">
+          &times;
+        </button>
+        <a href="/" class="hover:text-slate-300">Home</a>
+        <a href="/" class="hover:text-slate-300">About Me</a>
+        <a href="/" class="hover:text-slate-300">Skill</a>
+        <a href="/" class="hover:text-slate-300">Experience</a>
+        <a href="/" class="hover:text-slate-300">Project</a>
+      </div>
+    </transition>
   </nav>
 </template>
+
 <script>
 export default {
   data() {
     return {
       isScrolled: false,
+      isMenuOpen: false,
     };
   },
 
@@ -55,4 +79,19 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+
+<style scoped>
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.3s ease;
+  transition-duration: 300ms;
+}
+.slide-enter {
+  transform: translateX(-100%);
+  transition-duration: 300ms;
+}
+.slide-leave-to {
+  transform: translateX(-100%);
+  transition-duration: 300ms;
+}
+</style>

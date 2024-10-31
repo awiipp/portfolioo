@@ -4,28 +4,40 @@ import Bg from "./icons/svg/Topography.vue";
 
 <template lang="">
   <div class="absolute bottom-0 overflow-hidden w-full -z-50">
-    <Bg class="w-full min-h-screen" />
+    <Bg class="md:w-full min-h-screen" />
   </div>
   <div
     class="absolute bottom-0 overflow-hidden w-full h-72 bg-gradient-to-t from-slate-900 to-transparent -z-10"
   ></div>
-  <div class="text-white w-full min-h-screen flex font-quicksand">
-    <div class="w-1/2 min-h-screen flex justify-center items-center">
+  <div
+    class="text-white w-full min-h-screen flex flex-col md:flex-row font-quicksand"
+  >
+    <div
+      class="md:w-1/2 w-full md:min-h-screen flex justify-center items-center mt-44 md:mt-0"
+    >
       <div class="">
-        <p class="text-5xl font-semibold">
+        <p class="md:text-5xl text-3xl font-semibold">
           Hi, There! <span class="wave-hand">👋🏻</span>
         </p>
         <div class="typewriter-container">
-          <p class="text-7xl font-bold typewriter py-3">I'm Sayid Arip</p>
+          <p
+            class="text-5xl md:text-7xl font-bold typewriter py-3 -my-3 md:my-0"
+          >
+            I'm Sayid Arip
+          </p>
         </div>
-        <p class="text-5xl font-semibold text-slate-400">Web Developer</p>
+        <p class="text-3xl md:text-5xl font-semibold text-slate-400">
+          Web Developer
+        </p>
       </div>
     </div>
-    <div class="w-1/2 min-h-screen flex items-center">
+    <div
+      class="md:w-1/2 w-full md:min-h-screen flex items-center mt-12 md:mt-0"
+    >
       <img
         src="../assets/icon.png"
         alt=""
-        class="w-6/12 mx-auto rounded-full border-8 border-slate-800"
+        class="w-9/12 md:w-6/12 mx-auto rounded-full border-8 border-slate-800"
       />
     </div>
   </div>
