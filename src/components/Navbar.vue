@@ -1,9 +1,9 @@
 <template lang="">
   <nav
     :class="[
-      'text-white top-0 right-0 left-0 px-6 py-4 z-50 flex items-center font-quicksand fixed duration-300',
+      'text-white top-0 right-0 left-0 px-6 py-4 z-50 flex items-center font-quicksand md:fixed duration-300',
       isScrolled
-        ? 'bg-opacity-45 bg-slate-800 backdrop-filter backdrop-blur-md'
+        ? 'md:bg-opacity-45 md:bg-slate-800 md:backdrop-filter md:backdrop-blur-md'
         : 'bg-transparent',
     ]"
   >
@@ -71,11 +71,11 @@ export default {
   },
 
   mounted() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   },
 
   beforeMount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   },
 };
 </script>

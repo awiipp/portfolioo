@@ -1,10 +1,10 @@
 <script setup>
-import Laravel from "./icons/Laravel.vue";
-import Tailwind from "./icons/Tailwind.vue";
-import Vue from "./icons/Vue.vue";
-import Js from "./icons/Js.vue";
-import Php from "./icons/Php.vue";
-import Bg from "./icons/svg/Topography.vue";
+import Laravel from './icons/Laravel.vue';
+import Tailwind from './icons/Tailwind.vue';
+import Vue from './icons/Vue.vue';
+import Js from './icons/Js.vue';
+import Php from './icons/Php.vue';
+import Bg from './icons/svg/Topography.vue';
 </script>
 
 <template lang="">
@@ -19,12 +19,16 @@ import Bg from "./icons/svg/Topography.vue";
       <Bg class="md:w-full md:h-screen h-[140vh]" />
     </div>
 
-    <div class="relative z-10 md:top-52 top-20">
-      <h1 class="text-4xl pt-5 py-20 font-quicksand text-slate-100 font-bold">
+    <div class="relative z-10 top-20">
+      <h1
+        class="text-4xl pt-5 mb-10 md:pb-12 font-quicksand text-slate-100 font-bold"
+      >
         — Skills —
       </h1>
 
-      <div class="font-quicksand w-10/12 md:w-11/12 mx-auto flex flex-wrap justify-center">
+      <div
+        class="font-quicksand w-10/12 md:w-11/12 mx-auto flex flex-wrap justify-center"
+      >
         <div
           class="w-[370px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
         >

@@ -6,7 +6,7 @@
   </div>
 
   <div
-    class="w-full bg-slate-900 flex justify-center flex-col md:flex-row items-center pb-20 h-[90vh]"
+    class="w-full bg-slate-900 flex justify-center flex-col md:flex-row items-center h-[90vh]"
   >
     <div
       class="w-full md:w-1/2 flex flex-row justify-center items-center md:h-[500px] mb-10 md:mb-0"
