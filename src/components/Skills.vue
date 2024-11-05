@@ -1,10 +1,10 @@
 <script setup>
-import Laravel from './icons/Laravel.vue';
-import Tailwind from './icons/Tailwind.vue';
-import Vue from './icons/Vue.vue';
-import Js from './icons/Js.vue';
-import Php from './icons/Php.vue';
-import Bg from './icons/svg/Topography.vue';
+import Laravel from "./icons/Laravel.vue";
+import Tailwind from "./icons/Tailwind.vue";
+import Vue from "./icons/Vue.vue";
+import Js from "./icons/Js.vue";
+import Php from "./icons/Php.vue";
+import Bg from "./icons/svg/Topography.vue";
 </script>
 
 <template lang="">
@@ -30,38 +30,38 @@ import Bg from './icons/svg/Topography.vue';
         class="font-quicksand w-10/12 md:w-11/12 mx-auto flex flex-wrap justify-center"
       >
         <div
-          class="w-[370px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
+          class="md:w-[370px] w-[120px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
         >
           <Laravel />
-          <p class="text-white text-xl font-normal mt-5">Laravel</p>
+          <p class="text-white md:text-xl font-normal mt-5">Laravel</p>
         </div>
 
         <div
-          class="w-[370px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
+          class="md:w-[370px] w-[120px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
         >
           <Tailwind />
-          <p class="text-white text-xl font-normal mt-5">Tailwind CSS</p>
+          <p class="text-white md:text-xl font-normal mt-5">Tailwind CSS</p>
         </div>
 
         <div
-          class="w-[370px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
+          class="md:w-[370px] w-[120px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
         >
           <Js />
-          <p class="text-white text-xl font-normal mt-5">Javascript</p>
+          <p class="text-white md:text-xl font-normal mt-5">Javascript</p>
         </div>
 
         <div
-          class="w-[370px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
+          class="md:w-[370px] w-[120px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
         >
           <Vue />
-          <p class="text-white text-xl font-normal mt-5">Vue JS</p>
+          <p class="text-white md:text-xl font-normal mt-5">Vue JS</p>
         </div>
 
         <div
-          class="w-[370px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
+          class="md:w-[370px] w-[120px] bg-opacity-15 bg-slate-700 mx-2 my-2 hover:bg-opacity-50 duration-300 flex flex-col justify-center items-center py-5 rounded-xl backdrop-filter backdrop-blur-sm"
         >
           <Php />
-          <p class="text-white text-xl font-normal mt-5">PHP</p>
+          <p class="text-white md:text-xl font-normal mt-5">PHP</p>
         </div>
       </div>
     </div>

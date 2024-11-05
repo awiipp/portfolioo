@@ -1,12 +1,12 @@
 <template lang="">
   <div>
     <svg
-      height="75px"
       viewBox="0 0 256 264"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
+      class="md:h-[75px] h-[50px]"
     >
       <g>
         <path
