@@ -27,13 +27,23 @@
     <ul
       class="hidden lg:flex text-white font-normal text-sm items-center justify-center ml-auto space-x-5"
     >
-      <li><a href="/" class="hover:text-slate-300 font-normal">Home</a></li>
-      <li><a href="/" class="hover:text-slate-300 font-normal">About Me</a></li>
-      <li><a href="/" class="hover:text-slate-300 font-normal">Skill</a></li>
       <li>
-        <a href="/" class="hover:text-slate-300 font-normal">Experience</a>
+        <a href="#home" class="hover:text-slate-300 font-normal">Home</a>
       </li>
-      <li><a href="/" class="hover:text-slate-300 font-normal">Project</a></li>
+      <li>
+        <a href="#about" class="hover:text-slate-300 font-normal">About Me</a>
+      </li>
+      <li>
+        <a href="#skills" class="hover:text-slate-300 font-normal">Skills</a>
+      </li>
+      <li>
+        <a href="#experience" class="hover:text-slate-300 font-normal"
+          >Experience</a
+        >
+      </li>
+      <li>
+        <a href="#project" class="hover:text-slate-300 font-normal">Project</a>
+      </li>
     </ul>
 
     <!-- Sidebar Menu for Mobile -->

@@ -1,12 +1,13 @@
 <template lang="">
-  <div class="min-h-screen w-full bg-slate-900 font-quicksand text-slate-100">
-    <!-- <h1
-      class="text-4xl pt-5 py-20 font-quicksand text-center font-bold"
-    >
+  <div
+    class="min-h-screen w-full bg-slate-900 font-quicksand text-slate-100"
+    id="experience"
+  >
+    <h1 class="text-4xl pt-28 font-quicksand text-center font-bold">
       — Experience —
-    </h1> -->
+    </h1>
     <div
-      class="flex md:flex-row flex-col pt-20 md:pt-40 flex-wrap items-baseline w-10/12 mx-auto"
+      class="flex md:flex-row flex-col pt-20 flex-wrap items-baseline w-10/12 mx-auto"
     >
       <div class="w-full md:w-1/2 flex justify-center items-center flex-col">
         <h1 class="text-center text-4xl font-bold mb-10">Education</h1>
@@ -27,7 +28,7 @@
       >
         <h1 class="text-center text-4xl font-bold mb-10">Experience</h1>
         <div class="md:w-10/12">
-          <div
+          <!-- <div
             class="bg-gradient-to-l py-5 from-slate-900 to-slate-800 px-5 md:px-7 mb-7"
           >
             <h1 class="text-[21px] md:text-[25px] font-bold mb-1">
@@ -35,7 +36,7 @@
             </h1>
             <p class="text-lg md:text-xl font-medium">2024</p>
             <p class="text-lg font-medium">Backend Developer</p>
-          </div>
+          </div> -->
 
           <div
             class="bg-gradient-to-l py-5 from-slate-900 to-slate-800 px-5 md:px-7 mb-7"
@@ -57,7 +58,7 @@
             <p class="text-lg font-medium">Frontend Developer</p>
           </div>
 
-          <div
+          <!-- <div
             class="bg-gradient-to-l py-5 from-slate-900 to-slate-800 px-5 md:px-7 mb-7"
           >
             <h1 class="text-[21px] md:text-[25px] font-bold mb-1">
@@ -65,7 +66,7 @@
             </h1>
             <p class="text-lg md:text-xl font-medium">2024</p>
             <p class="text-lg font-medium">Backend Developer</p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

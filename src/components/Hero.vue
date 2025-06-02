@@ -3,7 +3,7 @@ import Bg from './icons/svg/Topography.vue';
 </script>
 
 <template lang="">
-  <div class="absolute bottom-0 overflow-hidden w-full -z-50">
+  <div class="absolute bottom-0 overflow-hidden w-full -z-50" id="home">
     <Bg class="md:w-full min-h-screen" />
   </div>
   <div

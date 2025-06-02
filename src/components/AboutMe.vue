@@ -1,5 +1,8 @@
 <template lang="">
-  <div class="w-full bg-slate-900 text-center -mt-12 md:mt-0 pb-10 md:pb-0">
+  <div
+    class="w-full bg-slate-900 text-center -mt-12 md:mt-0 pb-10 md:pb-0"
+    id="about"
+  >
     <h1 class="text-4xl pt-20 font-quicksand text-slate-100 font-bold">
       — Who Am I?
     </h1>

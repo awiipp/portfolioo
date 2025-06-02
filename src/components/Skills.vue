@@ -8,7 +8,7 @@ import Bg from './icons/svg/Topography.vue';
 </script>
 
 <template lang="">
-  <div class="w-full text-center md:h-screen h-[140vh] relative">
+  <div class="w-full text-center md:h-screen h-[140vh] relative" id="skills">
     <div
       class="h-full bg-gradient-to-b from-slate-900 to-transparent via-transparent absolute z-0 inset-0"
     ></div>
