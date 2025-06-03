@@ -26,7 +26,6 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <!-- Navbar utama fixed dengan bg blur transparan -->
   <nav
     :class="[
       'fixed top-0 left-0 w-full z-50 transition-colors duration-300 backdrop-blur-md',
@@ -41,7 +40,6 @@ onUnmounted(() => {
         ><span class="text-slate-400">pp</span>
       </h1>
 
-      <!-- Tombol menu untuk mobile -->
       <button
         @click="toggleMenu"
         class="md:hidden text-white text-3xl focus:outline-none"
@@ -61,7 +59,6 @@ onUnmounted(() => {
     </div>
   </nav>
 
-  <!-- Sidebar mobile -->
   <transition name="slide" duration-300>
     <div
       v-if="isMenuOpen"
@@ -96,7 +93,6 @@ onUnmounted(() => {
 </template>
 
 <style>
-/* Efek slide sidebar */
 .slide-enter-active,
 .slide-leave-active {
   transition: transform 0.3s ease;

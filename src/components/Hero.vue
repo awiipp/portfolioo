@@ -28,7 +28,7 @@
 
       <div class="md:w-1/2 w-full flex items-center mb-10 md:mt-10">
         <img
-          src="../assets/icon.png"
+          src="../assets/icon.jpg"
           alt=""
           class="w-[63%] md:w-6/12 mx-auto rounded-full border-8 border-slate-800"
         />

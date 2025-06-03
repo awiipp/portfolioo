@@ -12,12 +12,12 @@
       <div class="w-full md:w-1/2 flex justify-center">
         <div
           id="card"
-          class="grayscale brightness-75 hover:grayscale-0 hover:brightness-100 duration-300 overflow-hidden"
+          class="md:grayscale md:brightness-75 md:hover:grayscale-0 md:hover:brightness-100 duration-300 overflow-hidden flex justify-center items-center"
         >
           <img
-            src="../assets/study.jpeg"
+            src="../assets/about.jpg"
             alt="Study"
-            class="rounded-xl w-full max-w-md"
+            class="rounded-xl w-[90%] max-w-md"
           />
         </div>
       </div>

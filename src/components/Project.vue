@@ -4,33 +4,31 @@ import study from '@/assets/study.jpeg';
 const projects = [
   {
     id: 1,
-    title: 'Study Planner App',
-    description:
-      'A simple Vue.js-based planner to organize study schedules efficiently.',
+    title: 'Jejak Pemuda',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     image: study,
     link: '#',
   },
   {
     id: 2,
-    title: 'Digital Library UI',
+    title: 'Edutama',
     description:
-      'A frontend interface for digital library management using TailwindCSS.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit tempor.',
     image: study,
     link: '#',
   },
   {
     id: 3,
-    title: 'Anime Watchlist',
+    title: 'Vitalmotion',
     description:
-      'A web app to track and categorize anime series using Vue and Firebase.',
+      'Lorem ipsum dolor sit amet, consectetur a eros eleifend elit.',
     image: study,
     link: '#',
   },
   {
     id: 4,
-    title: 'Portfolio Website',
-    description:
-      'My personal portfolio built with Vue 3, featuring smooth animations and responsive layout.',
+    title: 'SleepWell',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing vitae.',
     image: study,
     link: '#',
   },

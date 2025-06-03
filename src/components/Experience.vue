@@ -28,16 +28,6 @@
       >
         <h1 class="text-center text-4xl font-bold mb-10">Experience</h1>
         <div class="md:w-10/12">
-          <!-- <div
-            class="bg-gradient-to-l py-5 from-slate-900 to-slate-800 px-5 md:px-7 mb-7"
-          >
-            <h1 class="text-[21px] md:text-[25px] font-bold mb-1">
-              Workshop INDI Technology
-            </h1>
-            <p class="text-lg md:text-xl font-medium">2024</p>
-            <p class="text-lg font-medium">Backend Developer</p>
-          </div> -->
-
           <div
             class="bg-gradient-to-l py-5 from-slate-900 to-slate-800 px-5 md:px-7 mb-7"
           >
@@ -57,16 +47,6 @@
             <p class="text-[14px] md:text-xl font-medium">2024</p>
             <p class="text-[13px] font-medium">Frontend Developer</p>
           </div>
-
-          <!-- <div
-            class="bg-gradient-to-l py-5 from-slate-900 to-slate-800 px-5 md:px-7 mb-7"
-          >
-            <h1 class="text-[15px] md:text-[25px] font-bold mb-1">
-              Bootcamp IDCamp 2024
-            </h1>
-            <p class="text-lg md:text-xl font-medium">2024</p>
-            <p class="text-lg font-medium">Backend Developer</p>
-          </div> -->
         </div>
       </div>
     </div>
