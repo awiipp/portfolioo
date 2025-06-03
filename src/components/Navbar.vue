@@ -1,9 +1,9 @@
-<template lang="">
+<template>
   <nav
     :class="[
-      'text-white top-0 right-0 left-0 px-6 py-4 z-50 flex items-center font-quicksand md:fixed duration-300',
+      'text-white top-0 right-0 left-0 px-6 py-4 z-50 flex items-center font-quicksand fixed duration-300',
       isScrolled
-        ? 'md:bg-opacity-45 md:bg-slate-800 md:backdrop-filter md:backdrop-blur-md'
+        ? 'bg-opacity-45 bg-slate-800 backdrop-filter backdrop-blur-md'
         : 'bg-transparent',
     ]"
   >
@@ -15,7 +15,7 @@
 
     <!-- Hamburger Icon for Mobile -->
     <div
-      class="ml-auto lg:hidden hidden cursor-pointer z-50"
+      class="ml-auto lg:hidden cursor-pointer z-50"
       @click="isMenuOpen = !isMenuOpen"
     >
       <span class="block w-6 h-0.5 bg-white mb-1"></span>
@@ -50,16 +50,16 @@
     <transition name="slide" duration-300>
       <div
         v-if="isMenuOpen"
-        class="fixed inset-y-0 left-0 w-3/4 max-w-xs bg-slate-800 bg-opacity-95 p-6 z-40 text-white font-normal text-lg flex flex-col space-y-6 shadow-lg"
+        class="fixed inset-y-0 left-0 w-3/4 max-w-xs bg-slate-800 p-6 z-40 text-white font-normal text-lg flex flex-col space-y-6 shadow-lg"
       >
         <button @click="isMenuOpen = false" class="ml-auto text-4xl">
           &times;
         </button>
-        <a href="/" class="hover:text-slate-300">Home</a>
-        <a href="/" class="hover:text-slate-300">About Me</a>
-        <a href="/" class="hover:text-slate-300">Skill</a>
-        <a href="/" class="hover:text-slate-300">Experience</a>
-        <a href="/" class="hover:text-slate-300">Project</a>
+        <a href="#home" class="hover:text-slate-300">Home</a>
+        <a href="#about" class="hover:text-slate-300">About Me</a>
+        <a href="#skills" class="hover:text-slate-300">Skills</a>
+        <a href="#experience" class="hover:text-slate-300">Experience</a>
+        <a href="#project" class="hover:text-slate-300">Project</a>
       </div>
     </transition>
   </nav>
@@ -84,7 +84,7 @@ export default {
     window.addEventListener('scroll', this.handleScroll);
   },
 
-  beforeMount() {
+  beforeUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   },
 };
