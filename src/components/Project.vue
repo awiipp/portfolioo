@@ -60,7 +60,7 @@ const projects = [
           />
         </div>
         <div
-          class="flex-1 w-full px-5 py-5 md:px-10 bg-gradient-to-br from-slate-800 to-slate-700 group-hover:bg-opacity-90 transition-all duration-300 backdrop-filter backdrop-blur-md"
+          class="flex-1 w-full px-5 py-5 md:px-7 bg-gradient-to-br from-slate-800 to-slate-700 group-hover:bg-opacity-90 transition-all duration-300 backdrop-filter backdrop-blur-md"
         >
           <div class="mb-3">
             <h1 class="font-bold text-lg mb-2">{{ project.title }}</h1>

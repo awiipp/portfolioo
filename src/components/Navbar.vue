@@ -1,107 +1,112 @@
+<script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
+
+const isMenuOpen = ref(false);
+const isScrolled = ref(false);
+
+function toggleMenu() {
+  isMenuOpen.value = !isMenuOpen.value;
+}
+
+// Handle scroll effect hanya untuk desktop
+function handleScroll() {
+  if (window.innerWidth > 768) {
+    isScrolled.value = window.scrollY > 10;
+  } else {
+    isScrolled.value = false; // Nonaktifkan di mobile
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
+</script>
+
 <template>
+  <!-- Navbar utama fixed dengan bg blur transparan -->
   <nav
     :class="[
-      'text-white top-0 right-0 left-0 px-6 py-4 z-50 flex items-center font-quicksand fixed duration-300',
-      isScrolled
-        ? 'bg-opacity-45 bg-slate-800 backdrop-filter backdrop-blur-md'
+      'fixed top-0 left-0 w-full z-50 transition-colors duration-300 backdrop-blur-md',
+      isScrolled && window.innerWidth > 768
+        ? 'bg-slate-900 bg-opacity-60 shadow-lg'
         : 'bg-transparent',
     ]"
   >
-    <!-- Logo -->
-    <h1 class="text-2xl font-semibold text-slate-200 font-platypi">
-      A<span class="text-slate-300">wii</span
-      ><span class="text-slate-400">pp</span>
-    </h1>
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-semibold text-slate-200 font-platypi">
+        A<span class="text-slate-300">wii</span
+        ><span class="text-slate-400">pp</span>
+      </h1>
 
-    <!-- Hamburger Icon for Mobile -->
-    <div
-      class="ml-auto lg:hidden cursor-pointer z-50"
-      @click="isMenuOpen = !isMenuOpen"
-    >
-      <span class="block w-6 h-0.5 bg-white mb-1"></span>
-      <span class="block w-6 h-0.5 bg-white mb-1"></span>
-      <span class="block w-6 h-0.5 bg-white"></span>
-    </div>
-
-    <!-- Menu Items for Desktop -->
-    <ul
-      class="hidden lg:flex text-white font-normal text-sm items-center justify-center ml-auto space-x-5"
-    >
-      <li>
-        <a href="#home" class="hover:text-slate-300 font-normal">Home</a>
-      </li>
-      <li>
-        <a href="#about" class="hover:text-slate-300 font-normal">About Me</a>
-      </li>
-      <li>
-        <a href="#skills" class="hover:text-slate-300 font-normal">Skills</a>
-      </li>
-      <li>
-        <a href="#experience" class="hover:text-slate-300 font-normal"
-          >Experience</a
-        >
-      </li>
-      <li>
-        <a href="#project" class="hover:text-slate-300 font-normal">Project</a>
-      </li>
-    </ul>
-
-    <!-- Sidebar Menu for Mobile -->
-    <transition name="slide" duration-300>
-      <div
-        v-if="isMenuOpen"
-        class="fixed inset-y-0 left-0 w-3/4 max-w-xs bg-slate-800 p-6 z-40 text-white font-normal text-lg flex flex-col space-y-6 shadow-lg"
+      <!-- Tombol menu untuk mobile -->
+      <button
+        @click="toggleMenu"
+        class="md:hidden text-white text-3xl focus:outline-none"
+        aria-label="Toggle Menu"
       >
-        <button @click="isMenuOpen = false" class="ml-auto text-4xl">
-          &times;
-        </button>
+        ☰
+      </button>
+
+      <!-- Menu desktop -->
+      <div class="hidden md:flex space-x-6 text-white font-semibold">
         <a href="#home" class="hover:text-slate-300">Home</a>
         <a href="#about" class="hover:text-slate-300">About Me</a>
         <a href="#skills" class="hover:text-slate-300">Skills</a>
         <a href="#experience" class="hover:text-slate-300">Experience</a>
         <a href="#project" class="hover:text-slate-300">Project</a>
       </div>
-    </transition>
+    </div>
   </nav>
+
+  <!-- Sidebar mobile -->
+  <transition name="slide" duration-300>
+    <div
+      v-if="isMenuOpen"
+      class="fixed inset-y-0 left-0 w-3/4 max-w-xs bg-slate-900 p-6 z-50 text-white font-normal text-lg flex flex-col space-y-6 shadow-lg"
+    >
+      <button @click="isMenuOpen = false" class="ml-auto text-4xl">
+        &times;
+      </button>
+      <a href="#home" class="hover:text-slate-300" @click="isMenuOpen = false"
+        >Home</a
+      >
+      <a href="#about" class="hover:text-slate-300" @click="isMenuOpen = false"
+        >About Me</a
+      >
+      <a href="#skills" class="hover:text-slate-300" @click="isMenuOpen = false"
+        >Skills</a
+      >
+      <a
+        href="#experience"
+        class="hover:text-slate-300"
+        @click="isMenuOpen = false"
+        >Experience</a
+      >
+      <a
+        href="#project"
+        class="hover:text-slate-300"
+        @click="isMenuOpen = false"
+        >Project</a
+      >
+    </div>
+  </transition>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isScrolled: false,
-      isMenuOpen: false,
-    };
-  },
-
-  methods: {
-    handleScroll() {
-      this.isScrolled = window.scrollY > 0;
-    },
-  },
-
-  mounted() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-
-  beforeUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-  },
-};
-</script>
-
-<style scoped>
+<style>
+/* Efek slide sidebar */
 .slide-enter-active,
 .slide-leave-active {
   transition: transform 0.3s ease;
-  transition-duration: 300ms;
 }
-.slide-enter {
-  transform: translateX(-100%);
-  transition-duration: 300ms;
-}
+.slide-enter-from,
 .slide-leave-to {
   transform: translateX(-100%);
-  transition-duration: 300ms;
+}
+.slide-enter-to,
+.slide-leave-from {
+  transform: translateX(0%);
 }
 </style>

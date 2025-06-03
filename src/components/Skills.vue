@@ -1,14 +1,14 @@
 <script setup>
-import Laravel from "./icons/Laravel.vue";
-import Tailwind from "./icons/Tailwind.vue";
-import Vue from "./icons/Vue.vue";
-import Js from "./icons/Js.vue";
-import Php from "./icons/Php.vue";
-import Bg from "./icons/svg/Topography.vue";
+import Laravel from './icons/Laravel.vue';
+import Tailwind from './icons/Tailwind.vue';
+import Vue from './icons/Vue.vue';
+import Js from './icons/Js.vue';
+import Php from './icons/Php.vue';
+import Bg from './icons/svg/Topography.vue';
 </script>
 
 <template lang="">
-  <div class="w-full text-center md:h-screen h-[140vh] relative" id="skills">
+  <div class="w-full text-center h-screen relative" id="skills">
     <div
       class="h-full bg-gradient-to-b from-slate-900 to-transparent via-transparent absolute z-0 inset-0"
     ></div>
