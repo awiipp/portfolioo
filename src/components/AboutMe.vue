@@ -1,35 +1,31 @@
-<template lang="">
-  <div
-    class="w-full bg-slate-900 text-center -mt-12 md:mt-0 pb-10 md:pb-0"
+<template>
+  <section
     id="about"
+    class="w-full bg-slate-900 py-20 font-quicksand text-white"
   >
-    <h1 class="text-4xl pt-20 font-quicksand text-slate-100 font-bold">
-      — Who Am I?
-    </h1>
-  </div>
+    <h1 class="text-4xl text-center font-bold mb-12">— Who Am I?</h1>
 
-  <div
-    class="w-full bg-slate-900 flex justify-center flex-col md:flex-row items-center h-[90vh]"
-  >
     <div
-      class="w-full md:w-1/2 flex flex-row justify-center items-center md:h-[500px] mb-10 md:mb-0"
+      class="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto gap-12 px-6"
     >
-      <div
-        id="card"
-        class="md:grayscale md:brightness-75 md:hover:grayscale-0 md:hover:brightness-100 mx-10 duration-300 flex justify-center items-center overflow-hidden"
-      >
-        <img src="../assets/study.jpeg" alt="" />
+      <!-- Image -->
+      <div class="w-full md:w-1/2 flex justify-center">
+        <div
+          id="card"
+          class="grayscale brightness-75 hover:grayscale-0 hover:brightness-100 duration-300 overflow-hidden"
+        >
+          <img
+            src="../assets/study.jpeg"
+            alt="Study"
+            class="rounded-xl w-full max-w-md"
+          />
+        </div>
       </div>
-    </div>
 
-    <div
-      class="w-full md:w-1/2 flex justify-start items-center md:mr-10 text-white"
-    >
-      <div class="w-10/12 pb-16 mx-10 md:mx-0">
-        <h1 class="text-4xl md:text-5xl font-medium md:mb-10 mb-5">
-          Sayid Arip
-        </h1>
-        <p class="text-base md:text-xl">
+      <!-- Text -->
+      <div class="w-full md:w-1/2 text-left">
+        <h2 class="text-4xl md:text-5xl font-medium mb-6">Sayid Arip</h2>
+        <p class="text-base md:text-xl leading-relaxed">
           Hello! My name is Sayid Arip, and I am an 11th-grade student at SMK
           Negeri 46 Jakarta, located in Jakarta, Indonesia. I am majoring in
           Software Engineering and have a keen interest in the field of Web
@@ -39,9 +35,5 @@
         </p>
       </div>
     </div>
-  </div>
+  </section>
 </template>
-<script>
-export default {};
-</script>
-<style lang=""></style>
